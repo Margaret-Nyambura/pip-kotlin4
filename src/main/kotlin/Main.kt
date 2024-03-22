@@ -2,13 +2,15 @@ fun main(){
     year(2024)
 
 
-    word("Akirachix")
+    word("AkiraChix")
     var k = detail("Brian", 34, "Kitale")
     println(k)
 
 
     var h = average(30,30,30)
     println(h)
+
+    words("Circle", "Oval", "Rectangle", "Square")
 
 
 }
@@ -37,6 +39,12 @@ fun detail(x:String, y:Int, z:String):String{
 fun average(num1:Int, num2:Int, num3:Int):Int{
     var result = (num1 + num2 + num3) / 3
     return result
+}
+
+//create a function that takes in 4 strings and creates an array out of them then prints out the array
+fun words(word1:String, word2:String, word3:String, word4:String){
+    var x = arrayOf(word1, word2, word3, word4)
+    println(x.contentToString())
 }
 
 
